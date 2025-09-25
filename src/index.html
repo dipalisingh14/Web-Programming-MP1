@@ -1,13 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP1</title>
+</head>
+<body>
+
+    <!-- <h1>Hello World! Welcome to MP1!</h1> -->
+    <!-- <img src="assets/image.jpg"> -->
+
+    <nav id="navbar_sticky">
+        <b>DIPALI'S BOOK QUEST : 2025</b>
+        <div class="Navigate">
+            <a href="#p1">Intro</a>
+            <a href="#p2">Stats</a>
+            <a href="#p3">Genres</a>
+            <a href="#p5">Books</a>
+            <a href="#p4">Follow me!</a>
+        </div>
+    </nav>
+
+    <!-- 
+    <section id="p1" class="bricks">
+        <div id="box1" class="boxinbox">
+            <img></img>
+            LALALA
+        </div>
+    </section> 
+    -->
+
+    <section id="p1" class="bricks">
+        <div class="video-container">
+            <video autoplay muted loop id="video-background">
+                <source src="assets/Video2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay_vid">
+                <h2><i>The scene is set!</i></h2>
+                <h2><i>It’s a 1v1: me vs. my To Be Read (TBR). Will I emerge victorious, or will the pile crush me first? Only time (and this tracker) will tell.</i></h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="p2" class="bricks">
+        <div class="multi-column-container">
+            <div class="column">
+                <p>9</p>
+                <div class="icon">
+                    <img src="assets/3.svg">
+                </div>
+                <h3>No. of Books Read</h3>
+            </div>
+
+            <div class="column">
+                <p>16</p>
+                <div class="icon">
+                    <img src="assets/2.svg">
+                </div>
+                <h3>Target</h3>
+            </div>
+
+            <div class="column">
+                <p>2</p>
+                <div class="icon">
+                    <img src="assets/1.svg">
+                </div>
+                <h3>Did not finish</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="p3">
+        <div class="carousel" carousel>
+            <button class="carousel_bt prev" button_cr="prev">&#8612;</button>
+            <button class="carousel_bt next" button_cr="next">&#8614;</button>
+            <ul slides>
+                <li class="slide" current>
+                    <img src="assets/car1.jpg" />
+                    <p class="overlay_vid">
+                        Favorite book so far: <br /><i><b>The Book Thief</b></i>
+                    </p>
+                </li>
+                <li class="slide">
+                    <img src="assets/car2.jpg" />
+                    <p class="overlay_vid">
+                        Book that made me cry the most: <br /><i><b>A Little Life</b></i>
+                    </p>
+                </li>
+                <li class="slide">
+                    <img src="assets/car3.jpg" />
+                    <p class="overlay_vid">
+                        Book that has my heart: <br /><i><b>Piranesi</b></i>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="p5" class="bricks">
+        <!-- Modal Trigger Button -->
+        <div class="button_class">
+
+            <div class="overlay_vid">
+                <p>Like what you see? Pick up your next read.</p>
+            </div>
+
+            <button class="modal-btn" id="openModalBtn">Get Recommendations!</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <!-- Close Button -->
+                    <span class="close" id="closeModalBtn">&times;</span>
+
+                    <!-- Cards Container -->
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="assets/C1B3.jpeg"/>
+                            <h3>The Book Thief</h3>
+                            <p>By Markus Zusak</p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/C1B2.jpg"/>
+                            <h3>Three Sisters, Three Queens</h3>
+                            <p><i>By Philippa Gregory</i></p>
+                        </div>
+                        <div class="card">
+                            <img src="assets/C1B1.jpeg"/>
+                            <h3>The Tattooist of Auschwitz</h3>
+                            <p><i>By Heather Morris</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="p4" class="bricks">
+        <div id="box4" class="boxinbox">
+            <a href="https://www.goodreads.com" target="_blank" class="overlay_vid">
+                <p>Follow me on Goodreads</p>
+                <div class="icon">
+                    <img src="assets/goodreads.png" alt="Goodreads Logo"/>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <footer class="site-footer">
+        <p>If found wandering in a bookstore, please return me to this URL.</p>
+    </footer>
+    
+</body>
 </html>
